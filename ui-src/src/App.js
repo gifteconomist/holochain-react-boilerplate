@@ -1,11 +1,11 @@
 import React from 'react'
 
-import Anchors from './components/Anchors'
+import SampleContainer from './components/SampleContainer'
 
 const App = props => {
   return(
   <div>
-    <Anchors {...props}/>
+    <SampleContainer {...props}/>
   </div>
 )}
 
