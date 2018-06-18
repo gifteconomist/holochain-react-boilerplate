@@ -1,0 +1,60 @@
+{
+    "Version": 1,
+    "UUID": "2204faf7-6cd3-11e8-bf78-60f81dc3dfee",
+    "Name": "HoloReact",
+    "Properties": {
+        "description": "Holochain boilerplate for react frontend",
+        "language": "en"
+    },
+    "PropertiesSchemaFile": "properties_schema.json",
+    "BasedOn": "",
+    "RequiresVersion": 26,
+    "DHTConfig": {
+        "HashType": "sha2-256",
+        "RedundancyFactor": 0
+    },
+    "Progenitor": {
+        "Identity": "",
+        "PubKey": null
+    },
+    "Zomes": [
+      {
+        "Name": "anchors",
+        "Description": "anchors mixin",
+        "RibosomeType": "js",
+        "CodeFile": "anchors.js",
+        "Config": {
+          "ErrorHandling": "throwErrors"
+        },
+        "Entries": [
+          {
+            "Name": "anchor",
+            "DataFormat": "json",
+            "SchemaFile": "anchor.json",
+            "Sharing": "public"
+          },
+          {
+            "Name": "anchor_link",
+            "DataFormat": "links"
+          }
+        ],
+        "Functions": [
+          {
+            "Name": "anchor",
+            "CallingType": "json",
+            "Exposure": "public"
+          },
+          {
+            "Name": "exists",
+            "CallingType": "json",
+            "Exposure": "public"
+          },
+          {
+            "Name": "anchors",
+            "CallingType": "string",
+            "Exposure": "public"
+          }
+        ]
+      }
+    ]
+}

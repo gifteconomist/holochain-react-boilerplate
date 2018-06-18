@@ -1,0 +1,11 @@
+node_modules/
+.DS_Store
+ui/
+build/
+npm-debug.log
+yarn.lock
+logs/
+release/
+agent.txt
+priv.key
+dna.hash

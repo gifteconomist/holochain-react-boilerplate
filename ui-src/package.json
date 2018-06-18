@@ -1,0 +1,35 @@
+{
+  "name": "ui-src",
+  "version": "1.0.0",
+  "proxy": "http://localhost:4141",
+  "description": "",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "hc-redux-middleware": "^1.0.3",
+    "ncp": "^2.0.0",
+    "prop-types": "^15.6.1",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "react-redux": "^5.0.7",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "^1.1.4",
+    "redux": "^4.0.0",
+    "redux-logger": "^3.0.6",
+    "redux-promise": "^0.6.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build && node copy-to-ui.js",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "release:files": "node copy-release.js"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^8.2.3",
+    "rimraf": "^2.6.2"
+  }
+}
